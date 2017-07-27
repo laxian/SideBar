@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="index_font_size">50</item>
+        <item name="index_font_color">@color/black</item>
     </style>
 
 </resources>

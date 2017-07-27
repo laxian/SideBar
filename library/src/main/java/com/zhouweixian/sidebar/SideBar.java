@@ -1,11 +1,13 @@
 package com.zhouweixian.sidebar;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -107,9 +109,14 @@ public class SideBar extends View {
     }
 
     public SideBar(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
+        this(context, attrs, defStyleAttr, 0);
+    }
 
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SideBar);
+    @SuppressLint("NewApi")
+    public SideBar(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SideBar, defStyleAttr, defStyleRes);
         indexFontSize = a.getFloat(R.styleable.SideBar_index_font_size, indexFontSize);
         indexFontColor = a.getInt(R.styleable.SideBar_index_font_color, indexFontColor);
         indexFontColorTouch = a.getInt(R.styleable.SideBar_index_font_color_touch, indexFontColorTouch);
