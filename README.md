@@ -1,7 +1,7 @@
 # SideBar
 仿微信通讯录页面侧边栏索引控件
 
-[效果动图](https://github.com/laxian/SideBar/blob/master/library/sidebar.gif)
+![效果动图](https://github.com/laxian/SideBar/blob/master/library/sidebar.gif)
 
 ## 使用方法
 
