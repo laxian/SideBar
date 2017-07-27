@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhouweixian.sample.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.zhouweixian.sidebar.SideBar
+        android:id="@+id/sidebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:choice_background_color="#99000000"
+        app:choice_background_corner="50"
+        app:choice_background_height="300"
+        app:choice_background_width="300"
+        app:choice_font_color="#fff"
+        app:choice_font_size="150"
+        app:index_background_color_touch="#ccb2b2b2"
+        app:index_font_color="@color/colorAccent"
+        app:index_font_size="30"
+        app:index_touch_width="50" />
+
+</RelativeLayout>

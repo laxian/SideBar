@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SideBar">
+        <attr name="index_font_size" format="float|reference"/>
+        <attr name="index_font_color" format="color|reference"/>
+        <attr name="index_font_color_touch" format="color|reference"/>
+        <attr name="index_background_color" format="color|reference"/>
+        <attr name="index_background_color_touch" format="color|reference"/>
+        <attr name="index_touch_width" format="float|reference"/>
+        <attr name="choice_font_size" format="float|reference"/>
+        <attr name="choice_font_color" format="color|reference"/>
+        <attr name="choice_background_color" format="color|reference"/>
+        <attr name="choice_background_width" format="float|reference"/>
+        <attr name="choice_background_height" format="float|reference"/>
+        <attr name="choice_background_corner" format="float|reference"/>
+        <attr name="index_set" format="string|reference"/>
+    </declare-styleable>
+</resources>
