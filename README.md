@@ -1,7 +1,7 @@
 # SideBar
 仿微信通讯录页面侧边栏索引控件
 
-[效果动图]()
+[效果动图](https://github.com/laxian/SideBar/blob/master/library/sidebar.gif)
 
 ## 使用方法
 
@@ -23,10 +23,11 @@
            app:index_background_color_touch="#ccb2b2b2"
            app:index_font_color="@color/colorAccent"
            app:index_font_size="30"
-           app:index_touch_width="50" />```
+           app:index_touch_width="50" />
+```
            
 
-响应回调
+回调
 ```sideBar.setCurrentIndexCallback(new OnCurrentIndexCallback {
     
     override fun onCurrentIndex(pos: Int, chr: Char) {
@@ -34,4 +35,5 @@
             linearLayoutManager.scrollToPositionWithOffset(index, 0)
         }
     
-    })```
+    })
+```
